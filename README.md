@@ -1,0 +1,5 @@
+This is a basic marketplace smart contract 
+
+n PyTeal, two datatypes are available: Byte slices (Byte) and integers (Int). Multiple variables define a product in our marketplace. It has a name, an image URL and a description, stored as byte slices. Also, it has a price and a variable "sold", which counts how often a product has already got sold. These variables are stored as integers. The variables are stored in the application's global state, consisting of key-value pairs, where keys are byte slices, and values can be integers or byte slices.
+
+In PyTeal we first create a class Product. While classes are not required for the smart contract to work, it helps in understanding the code. We also define two subclasses. The class Variables defines the keys for our Global state variable. The class AppMethods defines methods available for the product. Here, only "buy" is added for now.
